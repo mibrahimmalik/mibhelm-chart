@@ -7,6 +7,6 @@ entries:
     digest: e20fcaf5aa9b456db5f9625ac65f6f0e63eb416fc6af10a2c4b9dc7fb0478aba
     name: jenkins-k8s
     urls:
-    - https://github.com/mibrahimmalik/mibhelm-chart/jenkins-k8s-0.1.1.tgz
+    - https://mibrahimmalik.github.io/mibhelm-chart//jenkins-k8s-0.1.1.tgz
     version: 0.1.1
 generated: "2020-10-13T10:35:51.203623592Z"

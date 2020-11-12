@@ -9,9 +9,8 @@ metadata:
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
 spec:
-  storageClassName: manual
   accessModes:
-    - {{ .Values.storage.persistence.accessMode | quote }}  
+    - {{ .Values.storage.persistence.accessMode | quote }}
   resources:
     requests:
       storage: {{ .Values.storage.capacity }}

@@ -24,9 +24,9 @@ master:
 
 
 # ## Set the admin user
-# adminUser: YWRtaW4
+#adminUser: admin
 # ## Make sure to replace the default password
-# adminPassword: cGFzc3dvcmQ
+#adminPassword: password
 service:
   name: jenkins-k8s
   type: LoadBalancer
@@ -45,7 +45,6 @@ resources:
     memory: 1Gi
 storage:
   persistence:
-    storageClassName: manual
     enabled: true
     accessMode: ReadWriteOnce
   capacity: 10Gi

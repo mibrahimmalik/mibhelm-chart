@@ -7,8 +7,8 @@ initContainerImage: "alpine:3.10.2"
 replicaCount: 1
 imagePullSecrets:
 image:
-  repository: mygithubrepo/jenkins-k8s
-  tag: v3
+  repository: kubejenacr.azurecr.io/mibrahim/jenkins
+  tag: v1
   pullPolicy: Always
 
   resources:

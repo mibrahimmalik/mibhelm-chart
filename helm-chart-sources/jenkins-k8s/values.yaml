@@ -7,8 +7,8 @@ initContainerImage: "alpine:3.10.2"
 replicaCount: 1
 imagePullSecrets:
 image:
-  repository: kubejenacr.azurecr.io/mibrahim/jenkins
-  tag: v1
+  repository: jenkins/jenkins
+  tag: lts
   pullPolicy: Always
 
   resources:
@@ -53,5 +53,3 @@ jnlp:
   service:
     externalPort: 50000
     internalPort: 50000
-
-  

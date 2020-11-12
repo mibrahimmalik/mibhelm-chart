@@ -65,7 +65,7 @@ master:
         hYAzODo1Jt59pcqqKJEas0C/lFJEB3frw4ImNx5fNlJYOpx+ijfQs9m39CevDq0=
   # Used for label app.kubernetes.io/component
   componentName: "jenkins-master"
-  image: "kubejenacr.azurecr.io/mibrahim/jenkins"
+  image: "jenkins/jenkins"
   tag: "v1"
   imagePullPolicy: "Always"
   imagePullSecretName:
@@ -460,8 +460,8 @@ master:
 
 agent:
   enabled: true
-  image: "jenkins/inbound-agent"
-  tag: "4.3-4"
+  image: "kubejenacr.azurecr.io/mibrahim/jenkins-slave"
+  tag: "v1"
   workingDir: "/home/jenkins"
   customJenkinsLabels: []
   # name of the secret to be used for image pulling

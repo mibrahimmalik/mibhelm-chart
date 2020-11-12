@@ -460,8 +460,8 @@ master:
 
 agent:
   enabled: true
-  image: "kubejenacr.azurecr.io/mibrahim/jenkins-slave"
-  tag: "v1"
+  image: "joao29a/jnlp-slave-alpine-docker"
+  tag: "latest"
   workingDir: "/home/jenkins"
   customJenkinsLabels: []
   # name of the secret to be used for image pulling
